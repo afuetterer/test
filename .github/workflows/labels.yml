@@ -16,7 +16,7 @@ jobs:
       # Ref: https://github.com/EndBug/label-sync
       - uses: EndBug/label-sync@v2
         with:
-          config-file: https://raw.githubusercontent.com/EndBug/labels/main/labels.yml
+          config-file: https://raw.githubusercontent.com/rdmorganiser/.github/main/.github/labels.yml
           # If you want to delete any additional label, set this to true
           delete-other-labels: false
           # If you want the action just to show you the preview of the changes, without actually editing the labels, set this to true
