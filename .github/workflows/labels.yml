@@ -12,8 +12,8 @@ jobs:
       issues: write
     steps:
       # Ref: https://github.com/EndBug/label-sync
-      - uses: EndBug/label-sync@v2
-        with:
-          config-file: https://raw.githubusercontent.com/rdmorganiser/.github/main/.github/labels.yml
+    - uses: EndBug/label-sync@v2
+      with:
+        config-file: https://raw.githubusercontent.com/rdmorganiser/.github/main/.github/labels.yml
           # If you want to delete any additional label, set this to true
-          delete-other-labels: false
+        delete-other-labels: false
