@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+  workflow_dispatch: # run manually from actions tab
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions: {} # Set permissions at the job level
+
+jobs:
+
+  lint:
+    # Ref: https://github.com/afuetterer/rdmo-github/blob/main/.github/workflows/_lint.yml
+    uses: rdmorganiser/.github/.github/workflows/_lint.yml@main
